@@ -5,4 +5,5 @@ The colpari testing Docker deployment for Mattermost.
 * [default config](config.json-testing) with open server setting and the deployed 'pns' as push proxy hostname
 * initialize (or reset completely) with ./reset.sh
 * start with ./start.sh
-* Mattermost will be available on http://localhost:8065
+* creates one volume for postgres data; mattermost data is stored in ./volumes/
+* Mattermost will be available on http://localhost:8065 (mobile App can be used against this endpoint)
